@@ -1,0 +1,30 @@
+baseURL = 'https://altbound.com/'
+languageCode = 'en-us'
+title = 'altbound'
+theme = 'altbound-theme'
+
+[params]
+  description = "where outbound meets inbound, differently"
+  # Custom color scheme
+  colors = {
+    primary = "#00adb5",
+    primaryLight = "#00dee8",
+    background = "#ffffff",
+    text = "#111111",
+    lightGray = "#eeeeee",
+    mediumGray = "#d4d4d4"
+  }
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Services"
+    url = "/services/"
+    weight = 2
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 3

@@ -1,0 +1,129 @@
+:root {
+  --color-primary: #00adb5;
+  --color-primary-light: #00dee8;
+  --color-background: #ffffff;
+  --color-text: #111111;
+  --color-light-gray: #eeeeee;
+  --color-medium-gray: #d4d4d4;
+}
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Avenir Next World Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  font-family: "Avenir Next World Medium", sans-serif;
+  font-size: 2rem;
+  color: var(--color-primary);
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  color: var(--color-text);
+  margin: 1rem 0;
+}
+
+/* Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Header */
+header {
+  padding: 2rem 0;
+  background-color: var(--color-background);
+  border-bottom: 1px solid var(--color-light-gray);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--color-primary);
+}
+
+/* Hero section */
+.hero {
+  padding: 6rem 0;
+  text-align: center;
+  background-color: var(--color-light-gray);
+}
+
+/* Main content */
+main {
+  padding: 4rem 0;
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-text);
+  color: var(--color-background);
+  padding: 3rem 0;
+  margin-top: 4rem;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: var(--color-primary-light);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 1rem;
+  }
+  
+  .hero {
+    padding: 4rem 0;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+}
