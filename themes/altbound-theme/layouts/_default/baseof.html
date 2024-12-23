@@ -11,14 +11,16 @@
 <body>
     <header>
         <div class="container">
-            <nav>
-                <a href="/" class="logo">altbound</a>
-                <ul class="nav-links">
-                    {{ range .Site.Menus.main }}
-                    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-                    {{ end }}
-                </ul>
-            </nav>
+            <div class="page-wrapper">
+                <nav>
+                    <a href="/" class="logo">altbound</a>
+                    <ul class="nav-links">
+                        {{ range .Site.Menus.main }}
+                        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                        {{ end }}
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -26,7 +28,9 @@
 
     <footer>
         <div class="container">
-            <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}. All rights reserved.</p>
+            <div class="page-wrapper">
+                <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 </body>

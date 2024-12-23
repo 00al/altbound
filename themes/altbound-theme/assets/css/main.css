@@ -21,6 +21,17 @@ body {
   line-height: 1.6;
 }
 
+/* Layout */
+.container {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.page-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Avenir Next World Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -39,13 +50,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.5rem;
   color: var(--color-text);
   margin: 1rem 0;
-}
-
-/* Layout */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
 }
 
 /* Header */
@@ -121,9 +125,5 @@ footer {
   
   .hero {
     padding: 4rem 0;
-  }
-  
-  .container {
-    padding: 0 1rem;
   }
 }
