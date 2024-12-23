@@ -40,10 +40,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.logo span {
   font-family: "Avenir Next World Medium", sans-serif;
   font-size: 2rem;
   color: var(--color-primary);
-  text-decoration: none;
   text-transform: lowercase;
 }
 
