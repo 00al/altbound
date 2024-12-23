@@ -29,39 +29,57 @@
     
 <main>
     <div class="container">
-        <section class="page-header">
-            <h1>Contact Us</h1>
-            <p class="description">Get in touch to discuss how we can help transform your lead generation strategy</p>
-        </section>
+        <div class="page-wrapper">
+            <section class="page-header">
+                <h1>Contact Us</h1>
+                <p class="description">Get in touch to discuss how we can help transform your lead generation strategy</p>
+            </section>
 
-        <section class="contact-content">
-            <div class="contact-form">
-                <iframe data-tally-src="https://tally.so/embed/wbNJ4g?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="552" frameborder="0" marginheight="0" marginwidth="0" title="altbound contact us"></iframe>
-                <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
-            </div>
+            <section class="contact-content">
+                <div class="contact-form">
+                    <iframe data-tally-src="https://tally.so/embed/wbNJ4g?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="552" frameborder="0" marginheight="0" marginwidth="0" title="altbound contact us"></iframe>
+                    <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+                </div>
 
-            <div class="contact-info">
-                <h2>Other Ways to Connect</h2>
-                <div class="info-item">
-                    <h3>Email</h3>
-                    <p><a href="mailto:hello@altbound.com">hello@altbound.com</a></p>
+                <div class="contact-info">
+                    <h2>Other Ways to Connect</h2>
+                    <div class="info-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:hello@altbound.com">hello@altbound.com</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>LinkedIn</h3>
+                        <p><a href="https://linkedin.com/company/altbound" target="_blank">Connect on LinkedIn</a></p>
+                    </div>
                 </div>
-                <div class="info-item">
-                    <h3>LinkedIn</h3>
-                    <p><a href="https://linkedin.com/company/altbound" target="_blank">Connect on LinkedIn</a></p>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
 </main>
 
 <style>
+.page-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.page-header {
+    text-align: center;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: var(--color-text);
+    opacity: 0.8;
+    margin-top: 1rem;
+}
+
 .contact-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 4rem;
-    max-width: 1000px;
-    margin: 0 auto;
 }
 
 .contact-form {
