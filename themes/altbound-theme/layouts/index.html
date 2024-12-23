@@ -1,8 +1,9 @@
 {{ define "main" }}
 <section class="hero">
     <div class="container">
-        <h1 class="tagline">{{ .Site.Params.description }}</h1>
-        <p class="hero-subtitle">Expert omnichannel lead generation through email & LinkedIn</p>
+        <h1>say hello to <span class="highlight">altbound</span></h1>
+        <h2 class="tagline">{{ .Site.Params.description }}</h2>
+        <p class="hero-subtitle">proven omnichannel lead generation through email, linkedin, and social selling</p>
         <a href="/contact/" class="button">Get Started</a>
     </div>
 </section>
@@ -39,6 +40,21 @@
     padding: 8rem 0;
     background: linear-gradient(135deg, var(--color-background) 0%, var(--color-light-gray) 100%);
     color: var(--color-text);
+}
+
+.hero h1 {
+    text-transform: lowercase;
+}
+
+.highlight {
+    color: var(--color-primary);
+}
+
+.tagline {
+    font-size: 1.5rem;
+    color: var(--color-text);
+    margin: 1rem 0;
+    font-weight: normal;
 }
 
 .hero-subtitle {
