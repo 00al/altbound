@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ .Site.Params.description }}">
-    {{ $style := resources.Get "css/main.css" | resources.ToCSS | resources.Minify }}
+    {{ $style := resources.Get "css/main.css" | resources.Minify }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 </head>
 <body>
