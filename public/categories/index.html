@@ -11,18 +11,20 @@
 <body>
     <header>
         <div class="container">
-            <nav>
-                <a href="/" class="logo">altbound</a>
-                <ul class="nav-links">
-                    
-                    <li><a href="/">Home</a></li>
-                    
-                    <li><a href="/services/">Services</a></li>
-                    
-                    <li><a href="/contact/">Contact</a></li>
-                    
-                </ul>
-            </nav>
+            <div class="page-wrapper">
+                <nav>
+                    <a href="/" class="logo">altbound</a>
+                    <ul class="nav-links">
+                        
+                        <li><a href="/">Home</a></li>
+                        
+                        <li><a href="/services/">Services</a></li>
+                        
+                        <li><a href="/contact/">Contact</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -98,8 +100,7 @@
 
 .service-item {
     padding: 2rem;
-    background: var(--color-background);
-    border: 1px solid var(--color-light-gray);
+    background: var(--color-light-gray);
     border-radius: 8px;
 }
 
@@ -117,6 +118,8 @@
     margin-bottom: 1rem;
     padding-left: 1.5rem;
     position: relative;
+    color: var(--color-text);
+    opacity: 0.9;
 }
 
 .service-item li:before {
@@ -139,6 +142,7 @@
 
 .cta p {
     margin-bottom: 2rem;
+    opacity: 0.9;
 }
 
 @media (max-width: 768px) {
@@ -155,7 +159,9 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 altbound. All rights reserved.</p>
+            <div class="page-wrapper">
+                <p>&copy; 2024 altbound. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 </body>

@@ -9,10 +9,10 @@ theme = 'altbound-theme'
 [params.colors]
   primary = "#00adb5"
   primaryLight = "#00dee8"
-  background = "#ffffff"
-  text = "#111111"
-  lightGray = "#eeeeee"
-  mediumGray = "#d4d4d4"
+  background = "#111111"
+  text = "#eeeeee"
+  lightGray = "#222222"
+  mediumGray = "#333333"
 
 [menu]
   [[menu.main]]
