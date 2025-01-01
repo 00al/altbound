@@ -37,7 +37,3 @@ disableKinds = ['taxonomy', 'term']
     weight = 3
     [menu.main.params]
       target = "_blank"
-  [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    weight = 4
