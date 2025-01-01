@@ -32,6 +32,12 @@ disableKinds = ['taxonomy', 'term']
     url = "/services/"
     weight = 2
   [[menu.main]]
+    name = "Secrets"
+    url = "https://alex.altbound.com/"
+    weight = 3
+    [menu.main.params]
+      target = "_blank"
+  [[menu.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 3
+    weight = 4

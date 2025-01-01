@@ -77,7 +77,7 @@
                     </button>
                     <ul class="nav-links">
                         {{ range .Site.Menus.main }}
-                        <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+                        <li><a href="{{ .URL | absURL }}" {{ with .Params.target }}target="{{ . }}"{{ end }}>{{ .Name }}</a></li>
                         {{ end }}
                     </ul>
                 </nav>
