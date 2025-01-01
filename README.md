@@ -11,6 +11,14 @@ This is a Hugo static site with a custom theme. The main components are:
 - `static/`: Static assets
 - `public/`: Generated site (tracked in main branch for Cloudflare Pages deployment)
 
+### Key Features
+
+- Responsive design with mobile-friendly navigation
+- Pricing plans with integrated Calendly booking
+- Newsletter integration via Beehiiv
+- SEO optimizations including canonical URLs and HTTPS enforcement
+- Hidden pages support (e.g., contact page preserved but not linked)
+
 ## Development
 
 ### Prerequisites
@@ -75,15 +83,14 @@ The site is deployed via Cloudflare Pages from the `public` directory in the mai
    git merge development
    ```
 
-4. Add and commit the new build:
-   ```bash
-   git add public/
-   git commit -m "Build site for deployment"
-   ```
-
-5. Push to GitHub:
+4. Push to GitHub:
    ```bash
    git push origin main
+   ```
+
+5. Switch back to development:
+   ```bash
+   git checkout development
    ```
 
 6. Cloudflare Pages will automatically deploy the contents of the `public` directory
@@ -103,10 +110,20 @@ The custom theme is located in `themes/altbound-theme/` and includes:
 - `static/`: Theme-specific static assets
 
 Key files:
-- `layouts/_default/baseof.html`: Base template
-- `layouts/index.html`: Homepage template
+- `layouts/_default/baseof.html`: Base template with meta tags and navigation
+- `layouts/index.html`: Homepage template with services, pricing, and newsletter
 - `assets/css/main.css`: Main stylesheet
 
-## Contact Form
+## Hidden Pages
 
-The contact form is implemented using Tally.so and is embedded in the contact page template. 
+Some pages are maintained in the codebase but not linked in the navigation. To restore a hidden page:
+
+1. Add its menu entry to `hugo.toml`. Example for the contact page:
+   ```toml
+   [[menu.main]]
+     name = "Contact"
+     url = "/contact/"
+     weight = 4
+   ```
+
+2. Rebuild and deploy as usual 
