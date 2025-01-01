@@ -29,3 +29,9 @@ disableKinds = ['taxonomy', 'term']
     weight = 1
     [menu.main.params]
       target = "_blank"
+  [[menu.main]]
+    name = "Book a Call"
+    url = "https://calendly.com/alex-if7j/discovery"
+    weight = 2
+    [menu.main.params]
+      target = "_blank"
