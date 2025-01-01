@@ -72,6 +72,9 @@
                         <img src="https://altbound.com/images/option-alt-key.svg" alt="altbound logo" class="logo-icon">
                         <span>altbound</span>
                     </a>
+                    <button class="menu-toggle" aria-label="Toggle menu">
+                        <span class="hamburger"></span>
+                    </button>
                     <ul class="nav-links">
                         
                         <li><a href="https://altbound.com/">Home</a></li>
@@ -193,5 +196,11 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
