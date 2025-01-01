@@ -30,9 +30,15 @@ disableKinds = ['taxonomy', 'term']
     [menu.main.params]
       target = "_blank"
   [[menu.main]]
+    name = "Founder"
+    url = "https://www.linkedin.com/in/alex-loughlin-b49a9b110/"
+    weight = 2
+    [menu.main.params]
+      target = "_blank"
+  [[menu.main]]
     name = "Book a Call"
     url = "https://calendly.com/alex-if7j/discovery"
-    weight = 2
+    weight = 3
     [menu.main.params]
       target = "_blank"
       class = "cta-button"
