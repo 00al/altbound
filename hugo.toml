@@ -35,3 +35,4 @@ disableKinds = ['taxonomy', 'term']
     weight = 2
     [menu.main.params]
       target = "_blank"
+      class = "cta-button"

@@ -143,6 +143,19 @@ nav {
   color: var(--color-primary);
 }
 
+.nav-links a.cta-button {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.nav-links a.cta-button:hover {
+  background-color: var(--color-primary-light);
+  color: var(--color-text);
+}
+
 /* Hero section */
 .hero {
   padding: 6rem 0;
