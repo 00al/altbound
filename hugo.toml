@@ -2,6 +2,12 @@ baseURL = 'https://altbound.com/'
 languageCode = 'en-us'
 title = 'altbound'
 theme = 'altbound-theme'
+canonifyURLs = true
+enableRobotsTXT = true
+# Force HTTPS
+[security]
+  [security.http]
+    forceHttps = true
 
 [params]
   description = "where outbound meets inbound, differently"
