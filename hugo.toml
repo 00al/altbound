@@ -4,6 +4,8 @@ title = 'altbound'
 theme = 'altbound-theme'
 canonifyURLs = true
 enableRobotsTXT = true
+disableKinds = ['taxonomy', 'term']
+
 # Force HTTPS
 [security]
   [security.http]
