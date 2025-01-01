@@ -24,12 +24,8 @@ disableKinds = ['taxonomy', 'term']
 
 [menu]
   [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
-  [[menu.main]]
     name = "Secrets"
     url = "https://alex.altbound.com/"
-    weight = 2
+    weight = 1
     [menu.main.params]
       target = "_blank"
