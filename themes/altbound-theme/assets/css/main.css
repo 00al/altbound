@@ -19,6 +19,7 @@ body {
   color: var(--color-text);
   background-color: var(--color-background);
   line-height: 1.6;
+  padding-top: 5rem;
 }
 
 /* Layout */
@@ -66,9 +67,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header */
 header {
-  padding: 2rem 0;
+  padding: 1rem 0;
   background-color: var(--color-background);
   border-bottom: 1px solid var(--color-light-gray);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 nav {
@@ -211,6 +217,7 @@ footer {
     gap: 2rem;
     font-size: 1.5rem;
     z-index: 90;
+    padding-top: 5rem;
   }
 
   .nav-links.active {
