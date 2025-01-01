@@ -126,6 +126,51 @@
             </div>
         </section>
 
+        <section class="pricing">
+            <h2>Pricing Plans</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>LinkedIn Only</h3>
+                    <p class="price">$2.5k<span>/month</span></p>
+                    <ul class="features">
+                        <li>LinkedIn Profile Optimization</li>
+                        <li>Content Strategy</li>
+                        <li>Outbound Connection Campaigns</li>
+                        <li>Engagement Strategy</li>
+                        <li>Performance Analytics</li>
+                    </ul>
+                    <a href="https://altbound.com/contact/" class="button">Get Started</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Email Only</h3>
+                    <p class="price">$3k<span>/month</span></p>
+                    <ul class="features">
+                        <li>Email List Building</li>
+                        <li>Campaign Strategy</li>
+                        <li>Copywriting & Testing</li>
+                        <li>Deliverability Optimization</li>
+                        <li>Response Management</li>
+                    </ul>
+                    <a href="https://altbound.com/contact/" class="button">Get Started</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="featured-label">Best Value</div>
+                    <h3>Email + LinkedIn</h3>
+                    <p class="price">$4.5k<span>/month</span></p>
+                    <ul class="features">
+                        <li>Full Email Package</li>
+                        <li>Full LinkedIn Package</li>
+                        <li>Integrated Strategy</li>
+                        <li>Cross-Channel Analytics</li>
+                        <li>Priority Support</li>
+                    </ul>
+                    <a href="https://altbound.com/contact/" class="button">Get Started</a>
+                </div>
+            </div>
+        </section>
+
         <section class="newsletter-signup">
             <h2>From The Founder</h2>
             <iframe src="https://embeds.beehiiv.com/995566ce-2b58-493a-a24d-40747cb288db" data-test-id="beehiiv-embed" width="100%" height="320" frameborder="0" scrolling="no" style="border-radius: 4px; border: 2px solid #e5e7eb; margin: 0; background-color: transparent;"></iframe> 
@@ -216,6 +261,102 @@
 
 .newsletter-signup h2 {
     margin-bottom: 2rem;
+}
+
+.pricing {
+    padding: 6rem 0;
+    text-align: center;
+    background: linear-gradient(135deg, var(--color-background) 0%, var(--color-light-gray) 100%);
+}
+
+.pricing h2 {
+    margin-bottom: 3rem;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.pricing-card {
+    background: var(--color-light-gray);
+    border-radius: 8px;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+}
+
+.pricing-card.featured {
+    border: 2px solid var(--color-primary);
+}
+
+.featured-label {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-primary);
+    color: var(--color-text);
+    padding: 0.25rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.pricing-card h3 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.price span {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.features {
+    list-style: none;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.features li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.features li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+    .pricing {
+        padding: 4rem 0;
+    }
+    
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
 }
 </style>
 
