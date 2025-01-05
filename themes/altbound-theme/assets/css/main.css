@@ -140,6 +140,7 @@ nav {
   display: flex;
   gap: 2rem;
   list-style: none;
+  align-items: center;
 }
 
 .nav-links a {
@@ -147,6 +148,8 @@ nav {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
+  line-height: 1;
+  display: inline-block;
 }
 
 .nav-links a:hover {
@@ -159,6 +162,7 @@ nav {
   padding: 0.5rem 1rem;
   border-radius: 4px;
   transition: background-color 0.2s ease;
+  line-height: 1;
 }
 
 .nav-links a.cta-button:hover {
@@ -225,17 +229,21 @@ footer {
 }
 
 /* Buttons */
-.button {
+.button,
+.nav-links a.cta-button {
   display: inline-block;
-  padding: 0.8rem 1.6rem;
+  padding: 0.5rem 1rem;
   background-color: var(--color-primary);
   color: var(--color-text);
   text-decoration: none;
   border-radius: 4px;
   transition: background-color 0.2s ease;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
-.button:hover {
+.button:hover,
+.nav-links a.cta-button:hover {
   background-color: var(--color-primary-light);
 }
 
