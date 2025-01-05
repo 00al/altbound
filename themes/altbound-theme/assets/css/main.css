@@ -232,19 +232,37 @@ footer {
 .button,
 .nav-links a.cta-button {
   display: inline-block;
-  padding: 0.5rem 1rem;
   background-color: var(--color-primary);
   color: var(--color-text);
   text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.2s ease;
+  border-radius: 6px;
+  transition: all 0.2s ease;
   font-weight: 500;
   font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Regular buttons (non-nav) get more padding */
+.button {
+  padding: 0.75rem 1.5rem;
+}
+
+/* Nav buttons keep their compact padding */
+.nav-links a.cta-button {
+  padding: 0.5rem 1rem;
 }
 
 .button:hover,
 .nav-links a.cta-button:hover {
   background-color: var(--color-primary-light);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:active,
+.nav-links a.cta-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive design */
