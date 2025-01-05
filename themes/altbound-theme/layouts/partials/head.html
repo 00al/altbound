@@ -1,5 +1,52 @@
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ if .IsHome }}{{ site.Title }} - B2B Lead Generation Through Email & LinkedIn{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="{{ if .IsHome }}Done-for-you inbound + outbound for B2B growth. Book sales meetings that convert through email, LinkedIn and social selling.{{ else }}{{ .Description }}{{ end }}">
+<meta name="keywords" content="b2b lead generation, linkedin outreach, email outreach, social selling, inbound marketing, outbound marketing, sales pipeline, b2b growth">
+<meta name="author" content="Alex Loughlin">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }} - B2B Lead Generation Through Email & LinkedIn{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}">
+<meta property="og:description" content="{{ if .IsHome }}Done-for-you inbound + outbound for B2B growth. Book sales meetings that convert through email, LinkedIn and social selling.{{ else }}{{ .Description }}{{ end }}">
+<meta property="og:image" content="{{ site.BaseURL }}images/og-image.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ .Permalink }}">
+<meta property="twitter:title" content="{{ if .IsHome }}{{ site.Title }} - B2B Lead Generation Through Email & LinkedIn{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}">
+<meta property="twitter:description" content="{{ if .IsHome }}Done-for-you inbound + outbound for B2B growth. Book sales meetings that convert through email, LinkedIn and social selling.{{ else }}{{ .Description }}{{ end }}">
+<meta property="twitter:image" content="{{ site.BaseURL }}images/og-image.jpg">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "altbound",
+  "description": "Done-for-you inbound + outbound for B2B growth. Book sales meetings that convert through email, LinkedIn and social selling.",
+  "url": "{{ site.BaseURL }}",
+  "logo": "{{ site.BaseURL }}images/logo.png",
+  "founder": {
+    "@type": "Person",
+    "name": "Alex Loughlin"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "Thailand"
+  },
+  "priceRange": "$$",
+  "sameAs": [
+    "https://www.linkedin.com/in/alex-loughlin-b49a9b110/"
+  ]
+}
+</script>
+
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}

@@ -12,8 +12,18 @@ disableKinds = ['taxonomy', 'term']
     forceHttps = true
 
 [params]
-  description = "where outbound meets inbound, differently"
+  description = "Done-for-you inbound + outbound for B2B growth. Book sales meetings that convert through email, LinkedIn and social selling."
+  author = "Alex Loughlin"
+  images = ["images/og-image.jpg"]
+  mainSections = ["services"]
   
+[params.seo]
+  # Site verification codes
+  googleSiteVerification = "" # Add your Google verification code if you have one
+  
+[params.social]
+  linkedin = "https://www.linkedin.com/in/alex-loughlin-b49a9b110/"
+
 [params.colors]
   primary = "#00adb5"
   primaryLight = "#00dee8"
