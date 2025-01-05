@@ -43,7 +43,7 @@
                     <div class="carousel-container">
                         <div class="carousel-track">
                             {{ $files := readDir "static/images/testimonials" }}
-                            {{ range $files }}
+                            {{ range sort $files "Name" "asc" }}
                                 {{ if or (strings.HasSuffix .Name ".png") (strings.HasSuffix .Name ".jpg") }}
                                 <div class="testimonial-card" style="flex: 0 0 100%;">
                                     <img src="/images/testimonials/{{ .Name }}" alt="Client feedback" class="testimonial-image">
