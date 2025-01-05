@@ -283,13 +283,24 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    font-size: 1.5rem;
     z-index: 90;
     padding-top: 5rem;
   }
 
   .nav-links.active {
     display: flex;
+  }
+
+  .nav-links a,
+  .nav-links a.cta-button {
+    font-size: 1.125rem;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+  }
+
+  .nav-links a.cta-button {
+    width: auto;
+    min-width: 200px;
   }
 
   .hero {
