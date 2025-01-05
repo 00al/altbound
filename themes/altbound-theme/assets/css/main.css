@@ -176,15 +176,23 @@ nav {
 
 .hero-label {
   text-transform: uppercase;
-  font-size: 0.875rem;
-  letter-spacing: 0.05em;
-  margin-bottom: 1.5rem;
-  opacity: 0.8;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 3rem;
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: rgba(17, 17, 17, 0.95);
+  border: 1px solid var(--color-text);
+  border-radius: 100px;
+  color: var(--color-text);
+  font-weight: 600;
+  box-shadow: 0 0 20px rgba(238, 238, 238, 0.15);
+  backdrop-filter: blur(5px);
 }
 
 .hero h1 {
-  font-size: 4rem;
-  line-height: 1.1;
+  font-size: 5rem;
+  line-height: 1;
   margin-bottom: 2rem;
   text-transform: none;
 }
