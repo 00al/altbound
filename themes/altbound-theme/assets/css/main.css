@@ -62,7 +62,11 @@ h1, h2, h3, h4, h5, h6 {
 .tagline {
   font-size: 1.5rem;
   color: var(--color-text);
-  margin: 1rem 0;
+  margin: 1.5rem auto 2rem;
+  font-weight: normal;
+  max-width: 800px;
+  opacity: 0.9;
+  text-align: center;
 }
 
 /* Header */
@@ -164,9 +168,39 @@ nav {
 
 /* Hero section */
 .hero {
-  padding: 6rem 0;
   text-align: center;
-  background-color: var(--color-light-gray);
+  padding: 8rem 0;
+  background: linear-gradient(135deg, var(--color-background) 0%, var(--color-light-gray) 100%);
+  color: var(--color-text);
+}
+
+.hero-label {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  text-transform: none;
+}
+
+.highlight {
+  color: var(--color-primary);
+}
+
+.tagline {
+  font-size: 1.5rem;
+  color: var(--color-text);
+  margin: 1.5rem auto 2rem;
+  font-weight: normal;
+  max-width: 800px;
+  opacity: 0.9;
+  text-align: center;
 }
 
 /* Main content */
@@ -222,5 +256,17 @@ footer {
 
   .nav-links.active {
     display: flex;
+  }
+
+  .hero {
+    padding: 6rem 0;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .tagline {
+    font-size: 1.25rem;
   }
 }
