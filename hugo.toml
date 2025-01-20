@@ -15,7 +15,6 @@ disableKinds = ['taxonomy', 'term']
   description = "Done-for-you inbound + outbound for B2B growth. Book sales meetings that convert through email, LinkedIn and social selling."
   author = "Alex Loughlin"
   images = ["images/og-image.jpg"]
-  mainSections = ["services"]
   
 [params.seo]
   # Site verification codes
