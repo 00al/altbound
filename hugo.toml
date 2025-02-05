@@ -46,7 +46,7 @@ disableKinds = ['taxonomy', 'term']
       target = "_blank"
   [[menu.main]]
     name = "Book a Call"
-    url = "https://calendly.com/alex-if7j/discovery"
+    url = "https://easybookcalendar.com/calendar-4ae61e54f81e/booking/slots"
     weight = 3
     [menu.main.params]
       target = "_blank"
