@@ -1,6 +1,1 @@
 User-agent: *
-Allow: /
-Disallow: /tags/
-Disallow: /categories/
-
-Sitemap: https://altbound.com/sitemap.xml 

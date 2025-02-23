@@ -63,7 +63,13 @@
             <div class="pricing-grid">
                 <div class="pricing-card">
                     <h3>LinkedIn Only</h3>
-                    <p class="price">$2.5k<span>/month</span></p>
+                    <p class="price">
+                    {{ if .Site.Params.showPricing }}
+                        $2.5k<span>/month</span>
+                    {{ else }}
+                        Build Authority
+                    {{ end }}
+                    </p>
                     <ul class="features">
                         <li>Profile Optimization</li>
                         <li>Inbound Content</li>
@@ -76,7 +82,13 @@
 
                 <div class="pricing-card">
                     <h3>Email Only</h3>
-                    <p class="price">$3k<span>/month</span></p>
+                    <p class="price">
+                    {{ if .Site.Params.showPricing }}
+                        $3k<span>/month</span>
+                    {{ else }}
+                        Scale Outreach
+                    {{ end }}
+                    </p>
                     <ul class="features">
                         <li>Email List Building</li>
                         <li>Campaign Strategy</li>
@@ -90,7 +102,13 @@
                 <div class="pricing-card featured">
                     <div class="featured-label">Best Value</div>
                     <h3>Email + LinkedIn</h3>
-                    <p class="price">$4.5k<span>/month</span></p>
+                    <p class="price">
+                    {{ if .Site.Params.showPricing }}
+                        $4.5k<span>/month</span>
+                    {{ else }}
+                        Full Acceleration
+                    {{ end }}
+                    </p>
                     <ul class="features">
                         <li>Full Email Package</li>
                         <li>Full LinkedIn Package</li>
@@ -224,6 +242,7 @@
     display: flex;
     flex-direction: column;
     transition: transform 0.2s ease;
+    min-height: 450px;
 }
 
 .pricing-card:hover {
@@ -252,10 +271,19 @@
     margin-bottom: 1rem;
 }
 
+.pricing-card h3 + .features {
+    margin-top: 3.5rem;
+}
+
+.pricing-card h3 + .price + .features {
+    margin-top: 0;
+}
+
 .price {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 2rem;
+    white-space: nowrap;
 }
 
 .price span {
@@ -267,12 +295,18 @@
     list-style: none;
     margin-bottom: 2rem;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-left: 1rem;
 }
 
 .features li {
     margin-bottom: 1rem;
     padding-left: 1.5rem;
     position: relative;
+    text-align: left;
 }
 
 .features li:before {
@@ -290,6 +324,10 @@
     .pricing-grid {
         grid-template-columns: 1fr;
         max-width: 400px;
+    }
+
+    .price {
+        font-size: 2rem; /* Slightly smaller on mobile */
     }
 }
 
