@@ -47,11 +47,16 @@
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/ojNQOAHlWvs?si=njY3JONeXtxiAicg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
                             </div>
-                            {{ $files := readDir "static/images/testimonials" }}
-                            {{ range sort $files "Name" "asc" }}
+                            {{ $testimonials := (resources.Match "images/testimonials/*") }}
+                            {{ range $testimonials }}
                                 {{ if or (strings.HasSuffix .Name ".png") (strings.HasSuffix .Name ".jpg") }}
                                 <div class="testimonial-card" style="flex: 0 0 100%;">
-                                    <img src="/images/testimonials/{{ .Name }}" alt="Client feedback" class="testimonial-image">
+                                    {{ partial "image.html" (dict 
+                                        "image" .
+                                        "alt" "Client feedback"
+                                        "class" "testimonial-image"
+                                        "width" "1600"
+                                    ) }}
                                 </div>
                                 {{ end }}
                             {{ end }}
@@ -129,7 +134,13 @@
         <section class="newsletter-signup">
             <h2>From The Founder</h2>
             <div class="founder-photo">
-                <img src="/images/founder.jpg" alt="Alex Loughlin - Founder of altbound" class="founder-image">
+                {{ $founderImage := resources.Get "images/founder.jpg" }}
+                {{ partial "image.html" (dict 
+                    "image" $founderImage
+                    "alt" "Alex Loughlin - Founder of altbound"
+                    "class" "founder-image"
+                    "width" "400"
+                ) }}
             </div>
             {{ partial "beehiiv-widget.html" . }}
         </section>

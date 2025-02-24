@@ -1,0 +1,16 @@
+{{ $image := .image }}
+{{ $alt := .alt }}
+{{ $class := .class }}
+
+{{ $webp := $image.Resize (printf "%dx%d webp" $image.Width $image.Height) }}
+{{ $fallback := $image }}
+
+<picture>
+    <source srcset="{{ $webp.RelPermalink }}" type="image/webp">
+    <img 
+        src="{{ $fallback.RelPermalink }}" 
+        alt="{{ $alt }}"
+        {{ with $class }}class="{{ . }}"{{ end }}
+        loading="lazy"
+    >
+</picture> 

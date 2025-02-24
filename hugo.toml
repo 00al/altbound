@@ -52,3 +52,21 @@ disableKinds = ['taxonomy', 'term']
     [menu.main.params]
       target = "_blank"
       class = "cta-button"
+
+[imaging]
+  quality = 100
+  resampleFilter = "Lanczos"
+  anchor = "Smart"
+  # Process PNG files
+  [imaging.format]
+    webp = true  # Convert to WebP for better compression
+    png = true   # Keep original PNG as fallback
+  # Default JPEG quality setting for images
+  [imaging.exif]
+    # Enables or disables EXIF data copying
+    includeFields = ""
+    excludeFields = ""
+  # Cache the processed images
+  [imaging.cache]
+    dir = ":resourceDir/_gen"
+    maxAge = "720h"

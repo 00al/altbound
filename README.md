@@ -18,6 +18,8 @@ This is a Hugo static site with a custom theme. The main components are:
 - Newsletter integration via Beehiiv
 - SEO optimizations including canonical URLs and HTTPS enforcement
 - Hidden pages support (e.g., contact page preserved but not linked)
+- Automatic image optimization with WebP conversion and fallbacks
+- High-quality image processing with lazy loading
 
 ## Development
 
@@ -126,4 +128,23 @@ Some pages are maintained in the codebase but not linked in the navigation. To r
      weight = 4
    ```
 
-2. Rebuild and deploy as usual 
+2. Rebuild and deploy as usual
+
+## Image Handling
+
+The site uses Hugo's built-in image processing for optimal performance:
+
+- Images should be placed in the `assets/images/` directory
+- Automatic WebP conversion with PNG/JPG fallbacks
+- Lazy loading for better performance
+- Original quality preserved while providing optimized formats
+- Responsive images with proper width/height attributes
+
+Example image structure:
+```
+assets/
+  images/
+    testimonials/    # Testimonial screenshots
+    founder.jpg      # Team/profile photos
+    og-image.jpg     # Social media images
+``` 
