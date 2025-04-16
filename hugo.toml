@@ -47,7 +47,7 @@ disableKinds = ['taxonomy', 'term']
       target = "_blank"
   [[menu.main]]
     name = "Book a Call"
-    url = "https://cal.com/alex-altbound/30min"
+    url = "https://cal.com/alex-altbound/intro"
     weight = 3
     [menu.main.params]
       target = "_blank"
